@@ -1,5 +1,4 @@
 #!/bin/sh
-echo "Setup script for the EE402 module - Derek Molloy"
 echo "Setting up the default gateway"
 /sbin/route add default gw 192.168.7.1
  
