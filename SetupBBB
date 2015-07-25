@@ -9,4 +9,4 @@ echo "Setting the time using the Irish ntp pool"
 /usr/bin/ntpdate -b -s -u ie.pool.ntp.org
 
 echo "Start VNC service"
-x11vnc -bg -o %HOME/.x11vnc.log.%VNCDISPLAY -auth /var/run/lightdm/root/:0 -forever
+x11vnc -bg -o %HOME/.x11vnc.log.%VNCDISPLAY -auth /var/run/gdm/auth-for-gdm*/database -display :0  -forever
